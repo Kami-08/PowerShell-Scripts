@@ -69,7 +69,7 @@ for($i = 0; $i -lt 1;)
                             #Prints updated info from the destination user to prove that the changes when through.
                             #unfortunatly it sometimes comes back inaccurate due to the server taking a few seconds to upate.
                             #Provides a warning about this issue bellow as well.
-                        "`n the data was updated successfully These are the updated properties`n 
+                        "`n`n the data was updated successfully These are the updated properties`n 
                             IMPORTANT NOTE: Sometimes it takes a few seconds for the data to appear on the server.`n
                             if the printed list doesn't show any updated properties, check AD yourself. Thank you~`n" 
                         Get-ADUser -Identity $DestinationUserID -Properties Description, Office, Title, EmailAddress, Memberof
